@@ -2,3 +2,28 @@
   BG - #251534
   BTN - #ff00ac
 */
+
+.hero {
+  background-color: #251534;
+  background-size: cover;
+  background-position: 50% 100%;
+  background-image: url(../img/ship.jpg);
+  background-blend-mode: overlay;
+}
+
+.hero {
+  background-color: #251534;
+  background-size: cover;
+  background-position: 50% 100%;
+  background-image:
+    linear-gradient(hsl(0 0% 0% / 50%),
+      hsl(0 0% 0% / 50%)),
+    url(../img/ship.jpg);
+}
+
+
+/*
+
+HEX - #000
+
+*/
