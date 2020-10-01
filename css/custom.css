@@ -3,6 +3,7 @@
   BTN - #ff00ac
 */
 
+/* Metode 1 */
 .hero {
   background-color: #251534;
   background-size: cover;
@@ -11,6 +12,7 @@
   background-blend-mode: overlay;
 }
 
+/* Metode 2 */
 .hero {
   background-color: #251534;
   background-size: cover;
@@ -21,9 +23,17 @@
     url(../img/ship.jpg);
 }
 
+/* Optimeret kode m. blend */
+.hero {
+  --hero-img: url(../img/ship.jpg);
+  --hero-bg: #251534;
+  --hero-btn: #ff00ac;
 
-/*
+  background: var(--hero-bg) 50% 100% / cover;
+  background-image: var(--hero-img);
+  background-blend-mode: overlay;
+}
 
-HEX - #000
-
-*/
+.hero-btn {
+  background: var(--hero-btn);
+}
